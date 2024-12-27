@@ -15,7 +15,7 @@ const App = () => {
             return message.warning("Please enter a path");
           }
 
-          const bytes = await invoke<Uint8Array>("get_icon", {
+          const bytes = await invoke<Uint8Array>("plugin:icon|get_icon", {
             path: value,
             size: 256,
           });

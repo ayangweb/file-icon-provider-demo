@@ -1,0 +1,17 @@
+[package]
+name = "tauri-plugin-icon"
+version = "0.1.0"
+authors = []
+description = ""
+edition = "2021"
+rust-version = "1.77.2"
+links = "tauri-plugin-icon"
+
+[dependencies]
+tauri = { version = "2.1.0" }
+serde = "1.0"
+file_icon_provider = "0.3.1"
+image = "0.25.5"
+
+[build-dependencies]
+tauri-plugin = { version = "2.0.2", features = ["build"] }
